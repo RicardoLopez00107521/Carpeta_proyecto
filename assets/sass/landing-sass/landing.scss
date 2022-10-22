@@ -1,0 +1,88 @@
+body {
+    nav{
+        background-color: $theme-navbar-color;
+
+        @include flex(row);
+        justify-content: space-between;
+        align-items: center;
+
+        height: 80px;
+        padding: 10px 50px 10px 50px;
+
+        #left-navbar{
+            figure {
+                @include square(70px, 86px);
+            }
+    
+            img {
+                @include fluid-img();
+            }
+        }
+
+        #right-navbar{
+            .nav-container {
+                @include flex(row);
+    
+                #log-in {
+                    gap: 10px;
+                    
+                    display: flex;
+                    justify-content: center;
+
+                    background-color: $theme-background-button;
+
+                    width: 115px;
+                    height: 45px;
+                    border-radius: 15px;
+
+                    padding: 15px 5px 15px 5px; 
+
+                    figure {
+                        @include square(20px);
+                    }
+            
+                    img {
+                        @include fluid-img();
+                    }
+                    
+                    a {
+                        color: $theme-login-button-font-color;
+                        text-decoration: none;
+                        font-weight: 500;
+                    }
+                }
+    
+                #register {
+                    display: flex;
+                    justify-content: center;
+
+                    background-color: $theme-background-button;
+
+                    width: 150px;
+                    height: 45px;
+                    border-radius: 15px;
+
+                    padding: 15px 10px 15px 10px;
+    
+                    a {
+                        color: $theme-register-button-font-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        background-color: $theme-footer-color;
+        height: 48px;
+
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+
+        div {
+            color: $theme-footer-text-color;
+        }
+    }
+}

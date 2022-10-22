@@ -1,0 +1,140 @@
+:root {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: hsl(0deg, 0%, 25%);
+}
+
+h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+  color: hsl(0deg, 0%, 0%);
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body nav {
+  background-color: #0e47a1;
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  padding: 10px 50px 10px 50px;
+}
+body nav #left-navbar figure {
+  width: 70px;
+  height: 86px;
+}
+body nav #left-navbar img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body nav #right-navbar .nav-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+body nav #right-navbar .nav-container #log-in {
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #EEEEEE;
+  width: 115px;
+  height: 45px;
+  border-radius: 15px;
+  padding: 15px 5px 15px 5px;
+}
+body nav #right-navbar .nav-container #log-in figure {
+  width: 20px;
+  height: 1rem;
+}
+body nav #right-navbar .nav-container #log-in img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+body nav #right-navbar .nav-container #log-in a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: 500;
+}
+body nav #right-navbar .nav-container #register {
+  display: flex;
+  justify-content: center;
+  background-color: #EEEEEE;
+  width: 150px;
+  height: 45px;
+  border-radius: 15px;
+  padding: 15px 10px 15px 10px;
+}
+body nav #right-navbar .nav-container #register a {
+  color: #0e47a1;
+  text-decoration: underline;
+}
+body footer {
+  background-color: #0e47a1;
+  height: 48px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+}
+body footer div {
+  color: #FFFFFF;
+}
+
+/*# sourceMappingURL=style.css.map */

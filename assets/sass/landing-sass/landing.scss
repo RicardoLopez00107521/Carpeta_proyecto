@@ -1,6 +1,8 @@
 body {
     nav{
         background-color: $theme-navbar-color;
+        border: 1px;
+        border-radius: 0 0 16px 16px;
 
         @include flex(row);
         justify-content: space-between;
@@ -70,6 +72,23 @@ body {
                     }
                 }
             }
+        }
+    }
+
+    main{
+        padding: 2rem 1rem 2rem 1rem;
+        @include flex(row, true);
+        /* height: 80vh; */
+
+        figure {
+            @include square(971px, 718px);
+            
+        }
+
+        img {
+            @include fluid-img();
+            border-radius: 32px;
+            border: 1px;
         }
     }
 

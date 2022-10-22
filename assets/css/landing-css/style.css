@@ -99,54 +99,84 @@ body nav #right-navbar .nav-container #log-in {
   width: 115px;
   height: 45px;
   border-radius: 15px;
-  padding: 15px 5px 15px 5px;
+  padding: 10px 5px 10px 5px;
 }
 body nav #right-navbar .nav-container #log-in figure {
-  width: 20px;
+  width: 25px;
   height: 1rem;
 }
 body nav #right-navbar .nav-container #log-in img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  width: 25px;
+  height: 25px;
 }
 body nav #right-navbar .nav-container #log-in a {
   color: #000000;
   text-decoration: none;
   font-weight: 500;
+  padding: 5px;
 }
 body nav #right-navbar .nav-container #register {
+  gap: 10px;
   display: flex;
   justify-content: center;
   background-color: #EEEEEE;
   width: 150px;
   height: 45px;
   border-radius: 15px;
-  padding: 15px 10px 15px 10px;
+  padding: 10px 5px 10px 5px;
+}
+body nav #right-navbar .nav-container #register figure {
+  width: 25px;
+  height: 1rem;
+}
+body nav #right-navbar .nav-container #register img {
+  width: 25px;
+  height: 25px;
 }
 body nav #right-navbar .nav-container #register a {
-  color: #0e47a1;
+  color: #0D47A1;
   text-decoration: underline;
+  padding: 5px;
 }
 body main {
-  padding: 2rem 1rem 2rem 1rem;
+  padding: 3rem 18px 3rem 18px;
   display: flex;
   flex-direction: row;
   gap: 1rem;
   justify-content: center;
   align-items: center;
-  /* height: 80vh; */
+  gap: 0;
 }
 body main figure {
-  width: 971px;
+  width: 925px;
   height: 718px;
 }
-body main img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  border-radius: 32px;
-  border: 1px;
+body main figure img {
+  width: 925px;
+  height: 718px;
+  border-radius: 2rem 0 0 2rem;
+}
+body main div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 428px;
+  height: 718PX;
+  background: #0D47A1;
+  border-radius: 0px 32px 32px 0px;
+  padding: 30px;
+  gap: 25px;
+}
+body main div h2 {
+  font-weight: 600;
+  font-size: 32px;
+  display: flex;
+  color: #E3F2FD;
+}
+body main div p {
+  font-weight: 450;
+  font-size: 24px;
+  color: #E3F2FD;
 }
 body footer {
   background-color: #0e47a1;

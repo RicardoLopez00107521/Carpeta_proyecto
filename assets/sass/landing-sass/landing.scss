@@ -37,24 +37,28 @@ body {
                     height: 45px;
                     border-radius: 15px;
 
-                    padding: 15px 5px 15px 5px; 
+                    padding: 10px 5px 10px 5px; 
 
                     figure {
-                        @include square(20px);
+                        @include square(25px);
                     }
             
                     img {
-                        @include fluid-img();
+                        width: 25px;
+                        height: 25px;
                     }
                     
                     a {
                         color: $theme-login-button-font-color;
                         text-decoration: none;
                         font-weight: 500;
+                        padding: 5px;
                     }
                 }
     
                 #register {
+                    gap: 10px;
+
                     display: flex;
                     justify-content: center;
 
@@ -64,11 +68,21 @@ body {
                     height: 45px;
                     border-radius: 15px;
 
-                    padding: 15px 10px 15px 10px;
+                    padding: 10px 5px 10px 5px; 
+
+                    figure {
+                        @include square(25px);
+                    }
+            
+                    img {
+                        width: 25px;
+                        height: 25px;
+                    }
     
                     a {
                         color: $theme-register-button-font-color;
                         text-decoration: underline;
+                        padding: 5px;
                     }
                 }
             }
@@ -76,19 +90,45 @@ body {
     }
 
     main{
-        padding: 2rem 1rem 2rem 1rem;
+        padding: 3rem 18px 3rem 18px;
         @include flex(row, true);
-        /* height: 80vh; */
+        gap: 0;
 
         figure {
-            @include square(971px, 718px);
-            
+            @include square(925px, 718px);
+            img {
+                width: 925px;
+                height: 718px;
+                border-radius: 2rem 0 0 2rem;
+            }  
         }
 
-        img {
-            @include fluid-img();
-            border-radius: 32px;
-            border: 1px;
+        div {
+            @include flex(column, false);
+            
+            width: 428px;
+            height: 718PX;
+
+            background: #0D47A1;
+            border-radius: 0px 32px 32px 0px;
+
+            padding: 30px;
+            gap: 25px;
+
+            h2 {
+                font-weight: 600;
+                font-size: 32px;
+
+                display: flex;
+
+                color: $theme-main-text-color;
+            }
+
+            p {
+                font-weight: 450;
+                font-size: 24px;
+                color: $theme-main-text-color;
+            }
         }
     }
 
